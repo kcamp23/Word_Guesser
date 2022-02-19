@@ -13,6 +13,7 @@ public class Main {
 // move letter to choosen array
 // run through to see if is in word
 //print results
+        // print counter
 
 //option t ocontinue gae or exit
 
