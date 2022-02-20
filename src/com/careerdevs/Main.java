@@ -4,16 +4,23 @@ package com.careerdevs;
 
 public class Main {
     public static void main(String[] args) {
-       System.out.print("Welcome to Guess the WORD!!!");
+       System.out.print("Welcome to Guess the WORD!!! \n");
 
         mainMenu();
         System.out.print("Thank you for Playing");
             }
-        public static  mainMenu(){
+    // start game, end game
+        public static void  mainMenu(){
+        System.out.println("1) Play game");
+        System.out.println("2)Read Rules");
+        System.out.println("3) Exit");
+        int menuChoice = CLI.readInt("What would you like to do? \n ",1,3);
+
 
         }
-
-        public static wordGen(){
+   //how many players
+    // pick a word
+        public static void  wordGen(){
 
         }
         public static void finish(){
@@ -22,10 +29,20 @@ public class Main {
         public static void play(){
 
         }
-}
-// start game, end game
+    // guesses  completed
+        public static void outGuess(){
 
-// pick a word
+        }
+    // game won
+        public static void youWon(){}
+    //how many players
+    public static void randomWord(){
+        //random generate word
+    }
+}
+
+
+
 //make an array with entire alphabet
 // make an array with letters that have been choosen
 // take in guess
@@ -36,8 +53,8 @@ public class Main {
 
 //option t ocontinue gae or exit
 
-// word is completed
-// game won
+
+
 
 
 
