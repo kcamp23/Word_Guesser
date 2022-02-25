@@ -15,7 +15,8 @@ public class CLI {
             if (!inputString.trim().equals("")) {
                 return inputString;
             }
-
+//new work on filtering the output to make sure it fits
+            
             System.out.print(question);
             return scanner.nextLine();
         }

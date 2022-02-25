@@ -7,16 +7,12 @@ public class RandomWord {
             "guessing", "these", "words",
             "is", "very", "easy"
     };
-
-
-
     public Random rand = new Random();
 
     public String getRandomWord() {
         return playableWords[rand.nextInt(playableWords.length)];
-
     }
 
 
-
 }
+
