@@ -16,7 +16,7 @@ public class CLI {
                 return inputString;
             }
 //new work on filtering the output to make sure it fits
-            
+
             System.out.print(question);
             return scanner.nextLine();
         }

@@ -67,6 +67,12 @@ public class Main {
         do {
             // take in guess
             String guess = CLI.readString("What is your guess?");
+           while(alreadyChoosen.contains(guess)){
+               System.out.println("This letter has already been choosen, pleae try again.");
+               guess = CLI.readString("What is your guess?");
+           }
+
+
             // make an array with letters that have been choosen
             alreadyChoosen.add(guess);
             // run through to see if is in word
