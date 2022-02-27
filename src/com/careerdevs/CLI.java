@@ -10,15 +10,15 @@ public class CLI {
     public static String readString (String question ) {
         while (true) {
             System.out.print(question);
-            String inputString = scanner.nextLine();
+            String inputString = scanner.nextLine().trim().toString();
 
             if (!inputString.trim().equals("")) {
-                return inputString;
+                return inputString.toLowerCase().trim();
             }
 //new work on filtering the output to make sure it fits
 
             System.out.print(question);
-            return scanner.nextLine();
+            return inputString;
         }
     }
 
@@ -61,6 +61,12 @@ public class CLI {
             }
             System.out.print("Input must be Y or N");
         }
+
+    }
+
+    public static char readChar (String question){
+        char charInput = scanner.next().trim().toLowerCase(Locale.ROOT).charAt(0);
+        return charInput;
 
     }
 
